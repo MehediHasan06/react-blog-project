@@ -18,7 +18,6 @@ const Home = () => {
     setBlogs(remainedBlogs);
   };
 
-  
   //useEffect hook runs after every render in react.
   //So, we have to be careful to use it to change state. Because it can end up by falling in a continuous loop hole.
   //Generally, it is used to fetch data after every render
