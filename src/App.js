@@ -1,7 +1,8 @@
 // import { useState } from 'react';
-
-import Navbar from "./component/Navbar/Navbar";
+import Navbar from "./component/navbar/Navbar";
 import Home from "./component/Home";
+import NewBlog from "./component/newBlog/NewBlog";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   //const title = "Welcome to my world !";
@@ -22,20 +23,25 @@ function App() {
   //   setName('Masud');
   // }
   return (
-    <div className="App">
-      <Navbar />
-      <div className="content">
-        {/*<h1>{title}</h1>  Dynamic value in component using js*/}
-        {/*<p>{Math.random() *10}</p>*/}
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          {/*<h1>{title}</h1>  Dynamic value in component using js*/}
+          {/*<p>{Math.random() *10}</p>*/}
 
-        {/*<button onClick={handleClick}>Click me</button>*/}
-        {/*<button onClick={(e) => handleClickAgain('mario', e)}>Click me again</button>*/}
+          {/*<button onClick={handleClick}>Click me</button>*/}
+          {/*<button onClick={(e) => handleClickAgain('mario', e)}>Click me again</button>*/}
 
-        {/*<p>{ name }</p>
-        <button onClick={handleClick}>Click to change the name</button>*/}
-        <Home />
+          {/*<p>{ name }</p>
+          <button onClick={handleClick}>Click to change the name</button>*/}
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/newBlog" component={NewBlog}/>
+          </Switch>          
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
