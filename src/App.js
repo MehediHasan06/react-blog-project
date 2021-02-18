@@ -2,6 +2,8 @@
 import Navbar from "./component/navbar/Navbar";
 import Home from "./component/Home";
 import NewBlog from "./component/newBlog/NewBlog";
+import BlogDetails from "./component/blogDetails/BlogDetails";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -38,6 +40,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/newBlog" component={NewBlog}/>
+            <Route path="/blogs/:id" component={BlogDetails}/>
           </Switch>          
         </div>
       </div>

@@ -3,20 +3,20 @@ import BlogList from "./blogList/BlogList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-  // const [blogs, setBlogs] = useState([
-  //   { title: "My new website", body: "lorem ipsum...", author: "mario", id: 1 },
-  //   { title: "Welcome party!", body: "lorem ipsum...", author: "yoshi", id: 2 },
-  //   { title: "Web dev top tips", body: "lorem ipsum...", author: "mario", id: 3 },
-  // ]);
+//   const [blogs, setBlogs] = useState([
+//     { title: "My new website", body: "lorem ipsum...", author: "mario", id: 1 },
+//     { title: "Welcome party!", body: "lorem ipsum...", author: "yoshi", id: 2 },
+//     { title: "Web dev top tips", body: "lorem ipsum...", author: "mario", id: 3 },
+//   ]);
 
-  // const [name, setName] = useState("mario");
+//   const [name, setName] = useState("mario");
 
-  // const handleDelete = (id) => {
-  //   const remainedBlogs = blogs.filter((blog) => blog.id !== id);
-  //   setBlogs(remainedBlogs);
-  // };
-  // Filter Method will return an array which serves the filter conditions.
-  //?
+//   const handleDelete = (id) => {
+//     const remainedBlogs = blogs.filter((blog) => blog.id !== id);
+//     setBlogs(remainedBlogs);
+//   };
+//   Filter Method will return an array which serves the filter conditions.
+//   
 
   // useEffect(() => {
   //   console.log("use effect ran");
