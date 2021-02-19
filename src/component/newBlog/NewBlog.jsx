@@ -30,7 +30,7 @@ const Create = () => {
           type="text" 
           required 
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={(e) => setTitle(e.target.value)} // value will be set to the title state on change. 
         />
 
         <label>Blog body:</label>

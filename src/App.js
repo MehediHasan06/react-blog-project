@@ -3,6 +3,7 @@ import Navbar from "./component/navbar/Navbar";
 import Home from "./component/Home";
 import NewBlog from "./component/newBlog/NewBlog";
 import BlogDetails from "./component/blogDetails/BlogDetails";
+import NotFound from "./component/notFound";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -41,6 +42,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/newBlog" component={NewBlog}/>
             <Route path="/blogs/:id" component={BlogDetails}/>
+            <Route path="*" component={NotFound} />
           </Switch>          
         </div>
       </div>
