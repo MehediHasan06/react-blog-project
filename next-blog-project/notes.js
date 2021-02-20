@@ -8,3 +8,10 @@
 //Again, pages->ninjas->index.js....Then, to access the test page -> http://localhost:3000/ninjas/. Cause the name "index" create a root path for that file.
 
 /* So, Next js generates routes automatically */
+
+// We can add components just like react but in separate folder than pages. -------------------------
+
+// We can use <Link href="/"> <a>Home</a> </Link> -> something like that to use client side rendering for the navigation link. All we have to do is to import it like that -> import Link from "next/link" and use that like above. ------------
+
+//Code Splitting --------------------------------
+// Layout component -> To use reusable components
