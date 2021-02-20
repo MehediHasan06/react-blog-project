@@ -14,4 +14,20 @@
 // We can use <Link href="/"> <a>Home</a> </Link> -> something like that to use client side rendering for the navigation link. All we have to do is to import it like that -> import Link from "next/link" and use that like above. ------------
 
 //Code Splitting --------------------------------
-// Layout component -> To use reusable components
+// Layout component -> To use reusable components --------------------------------
+//  https://dev.to/ozanbolel/layout-persistence-in-next-js-107g
+// 1. _app.js -> Use a Layout component
+// 2. Layout component -> children can get by destructuring from the component 
+
+// Global css file 
+
+// 404.js is a special file just like index.js
+// To redirect to a different page use, useRouter()
+
+// next head
+// next Image 
+// Dynamic Routing
+
+
+// getStaticPaths
+// getStaticProps

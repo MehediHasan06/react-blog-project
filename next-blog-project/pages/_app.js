@@ -1,4 +1,3 @@
-
 //   return <Component {...pageProps} />
 import Layout from '../components/Layout';
 import '../styles/globals.css';
