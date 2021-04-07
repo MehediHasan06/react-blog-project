@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 const Friends = (props) => {
-  const { name, email } = props.friend;
+  const { name, email, id } = props.friend;
   const friendStyle = {
     border: "1px solid red",
     margin: "20px",
@@ -8,10 +10,14 @@ const Friends = (props) => {
   };
 
   return (
-    <div style={friendStyle}>
-      <h3>Name: {name}</h3>
-      <h3>Email: {email}</h3>
-    </div>
+    // Dynamic URL parameter
+    
+    <Link to={`/friend/${id}`}> 
+      <div style={friendStyle}>
+        <h3>Name: {name}</h3>
+        <h3>Email: {email}</h3>      
+      </div>
+    </Link>
   );
 };
 

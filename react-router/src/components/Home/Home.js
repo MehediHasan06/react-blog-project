@@ -13,7 +13,7 @@ const Home = () => {
       <h2>Number of friends : {friends.length}</h2>
 
       {friends.map((friend) => (
-        <Friends key={friend.id} friend={friend} />
+        <Friends id={friend.id} friend={friend} />
       ))}
     </div>
   );
