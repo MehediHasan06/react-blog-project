@@ -24,6 +24,7 @@ function App() {
       <Router> 
         <Home path="/" />
         <Dashboard path="/dashboard" />
+        {/* Dynamic URL parameter */}
         <Invoice path="invoices/:invoiceId" />
       </Router>
     </div>
