@@ -27,6 +27,7 @@ const RefactoredVHF = () => {
             })}
           />
           {console.log("err", errors)}
+          
           {/* Validation Check */}
           {errors.email && <p className="errorMsg">{errors.email.message}</p>}
         </div>
