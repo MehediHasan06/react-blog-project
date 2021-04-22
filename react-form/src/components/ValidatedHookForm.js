@@ -19,6 +19,9 @@ const ValidatedHookForm = () => {
               pattern: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
             })}
           />
+          {console.log("errors", errors)}
+          {/* The validation will run once the form is submitted.If the validation failed, then the errors.email field inside the errors object will be populated with the type field which we used to display the error message. Also, the form is not submitted as long as there is a validation error. */}
+
           {/* Validation Check */}
           {errors.email && errors.email.type === "required" && (
             <p className="errorMsg">Email is required.</p>
