@@ -21,4 +21,4 @@ const mapDispatchToProps = (dispatch)=> {
   }
 }
 
-export default connect(null, mapDispatchToProps) (Controller);
+export default connect(null, mapDispatchToProps) (Controller); // We're connecting the component with redux.

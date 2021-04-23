@@ -12,7 +12,7 @@ const Count = (props) => {
 
 const mapStateToProps = (state) => {
   // console.log("state", state); 
-  // This function automatically get the reducer state as argument
+  // This function automatically get the reducer state as argument. Function name can be different.
   return {
     count: state.count
   }

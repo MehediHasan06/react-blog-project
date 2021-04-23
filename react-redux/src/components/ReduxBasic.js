@@ -41,3 +41,5 @@ const ReduxBasic = ()=> {
 }
 
 export default ReduxBasic;
+
+//we can use the prople-law-gov example(Hitesh) to realize the example. 
