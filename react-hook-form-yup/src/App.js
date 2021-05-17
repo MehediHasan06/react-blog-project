@@ -1,10 +1,12 @@
 import './App.css';
-import BasicForm from './components/BasicForm';
+// import BasicForm from './components/BasicForm';
+import CustomForm from './components/CustomForm';
 
 function App() {
   return (
     <div className="App">
-      <BasicForm/>
+      {/* <BasicForm/> */}
+      <CustomForm/>
     </div>
   );
 }
