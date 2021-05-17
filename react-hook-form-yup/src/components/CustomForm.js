@@ -4,19 +4,19 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 const schema = yup.object().shape({
-  firstName: yup.string().required("First name is needed"),
-  lastName: yup.string().required("First name is needed"),
-  email: yup.string().email().required("First name is needed"),
+  firstName: yup.string().required("First name is needed"), // yup can generate default error messages for each field, but we can also provide custom message like this
+  lastName: yup.string().required(),
+  email: yup.string().email().required(),
   age: yup
     .number()
     .positive()
     .integer()
-    .required("First name is needed"),
+    .required(),
   password: yup
     .string()
     .min(4)
     .max(15)
-    .required("First name is needed"),
+    .required(),
   confirmPassword: yup.string().oneOf([yup.ref("password"), null]),
 });
 
